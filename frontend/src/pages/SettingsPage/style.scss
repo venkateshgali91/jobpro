@@ -1,0 +1,18 @@
+.settings-page {
+  display: grid;
+  grid-template-columns: 15em 1fr;
+  grid-template-rows: repeat(5, min-content);
+  gap: 1.5em;
+
+  min-height: calc(100vh - ($navbar-height + $footer-height));
+  padding: $padding-to-navbar 4em 1.5em 4em;
+
+  background-color: $alabaster;
+
+  .settings-page__description-data,
+  .settings-page__social-data,
+  .settings-page__profile-image-data,
+  .settings-page__account-deletion{
+    grid-column: 2;
+  }
+}

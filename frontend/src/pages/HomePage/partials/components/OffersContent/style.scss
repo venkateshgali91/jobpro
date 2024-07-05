@@ -1,0 +1,29 @@
+.offers-layout {
+  display: flex;
+  flex-direction: column;
+
+  min-height: calc(100vh - ($navbar-height + $footer-height));
+  padding: 0 4em;
+
+  .offers-content__pagination {
+    margin-top: auto;
+  }
+
+  .offers-content {
+    display: flex;
+    gap: 1em;
+    flex-grow: 1;
+
+    & > * {
+      flex-basis: 50%;
+    }
+
+    margin-bottom: 2.5em;
+
+    @include for-desktop {
+      & > * {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

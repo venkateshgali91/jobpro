@@ -1,0 +1,42 @@
+.profile-menu {
+  position: sticky;
+
+  top: $scroll-padding-top;
+  height: 16.75em;
+
+  .profile-menu__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1.2em;
+
+    .profile-menu__image {
+      width: 5em;
+      height: 5em;
+      object-fit: cover;
+
+      margin-bottom: 1em;
+      border-radius: 50%;
+      background-image: url("../../../assets/images/img-placeholder1.png");
+      background-size: contain;
+    }
+  }
+  .profile-menu__nav {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 1em;
+    gap: 0.4em;
+
+    .profile-menu__nav-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5em;
+    }
+
+    .profile-menu__logout {
+      cursor: pointer;
+    }
+  }
+}

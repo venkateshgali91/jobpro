@@ -1,0 +1,21 @@
+.content-switcher-wrapper {
+  position: relative;
+
+  .content-switcher__button {
+    font-size: 1.25em;
+    font-weight: 700;
+    font-family: inherit;
+    color: $carbon;
+    background-color: transparent;
+
+    border: none;
+  }
+
+  .content-switcher__line {
+    position: absolute;
+    bottom: -0.75em;
+    left: 0;
+    width: 0.8em;
+    height: 2px;
+  }
+}

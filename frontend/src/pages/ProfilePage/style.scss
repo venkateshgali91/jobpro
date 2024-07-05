@@ -1,0 +1,21 @@
+.profile-page {
+  min-height: calc(100vh - ($navbar-height + $footer-height));
+  padding: $padding-to-navbar 4em 1.5em 4em;
+  background-color: $alabaster;
+
+  display: grid;
+  grid-template-columns: 15em 1fr;
+  grid-template-rows: repeat(1, minmax(4.5em, max-content));
+
+  .profile__info {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 0 10%;
+
+    .profile__menu {
+      display: flex;
+      gap: 1.5em;
+    }
+  }
+}
