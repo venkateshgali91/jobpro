@@ -21,6 +21,12 @@ class CandidateSerializer(serializers.ModelSerializer):
             "image",
             "github_url",
             "linkedin_url",
+            "phone_number",
+            "aadhar_card", 
+            "cv",
+            "skillset",
+            "quali",
+            "yop",
         ]
 
     def create(self, validated_data: Dict) -> Candidate:
@@ -52,6 +58,12 @@ class CandidateUpdateSerializer(serializers.ModelSerializer):
             "description",
             "github_url",
             "linkedin_url",
+            "phone_number",
+            "aadhar_card", 
+            "cv",
+            "skillset",
+            "quali",
+            "yop",
         ]
         read_only_fields = ["email"]
 
